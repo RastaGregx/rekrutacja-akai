@@ -20,7 +20,7 @@ function validateForm() {
     var mobile = document.getElementById("mobile-checkbox").checked;
     var graphics = document.getElementById("graphics-checkbox").checked;
 
-    if ((b == null || b == "") || (a == null || a == "") || (c == null || c == "") || ((front == false) && (back == false) && (mobile == false) && (graphics == false)))
+    if ((!a) || (!b) || (!c) || ((!front) && (!back) && (!mobile) && (!graphics)))
     {
       alert("Uzupełnij wszystkie pola formularza");
       return false;
