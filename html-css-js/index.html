@@ -19,24 +19,11 @@
 	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
-    <!--
-        ...
-        ...
-        ...
-    -->
-
-	<!-- początek formularza -->
-
-	<!-- element section ma ID "task-frontend". Może to się nam przydać m.in. podczas stylowania dokumentu -->
 	<section id="task-frontend">
 		<img src="img/logo.jpg" alt="logo">
-		<!-- element span otrzymuje klasę "basic-title". Klasa ta może być wykorzystywana w wielu różnych elementach -->
 		<span class="basic-title">Formularz Rekrutacyjny</span>
 		<form method="POST" onsubmit="return false">
-
-			<!-- od użytkownika pobieramy imię, nazwisko, email oraz informację, do jakiej sekcji chce dołączyć -->
-
-		    <input type="text" id="first-name" placeholder="Imię" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Wykryto niepoprawny znak')" oninput="this.setCustomValidity('')" />
+			<input type="text" id="first-name" placeholder="Imię" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Wykryto niepoprawny znak')" oninput="this.setCustomValidity('')" />
 		    <input type="text" id="last-name" placeholder="Nazwisko" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Wykryto niepoprawny znak')" oninput="this.setCustomValidity('')"/>
 		    <input type="email" id="email" placeholder="E-mail" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"/>
 
@@ -63,25 +50,10 @@
 						<label for="graphics-checkbox">Grafika</label>
 					</td>
 				</tr>
-			</table>
-
-
-						
-
-					
+			</table>	
             <input type="submit" value="Wyślij" onclick="validateForm()">
 		</form>
 	</section>
-	<!-- koniec formularza -->
-
-    <!--
-        ...
-        ...
-        ...
-    -->
-
-
-<!-- zaimportowanie pliku z kodem javascript, który dokona walidacji danych (zadanie JS) -->
 <script type="text/javascript" src="js/validation.js"></script>
 
 </body>
